@@ -19,7 +19,7 @@ mongo_cluster = os.getenv("MONGO_CLUSTER")
 # Whether to use GPT-3 or our own model
 gpt3 = True
 
-cluster = pymongo.MongoClient("mongodb+srv://{}:{}@{}.ngh0psu.mongodb.net/?retryWrites=true&w=majority".format(mongo_username, mongo_password, mongo_cluster))
+cluster = pymongo.MongoClient("mongodb+srv://{}:{}@{}.mongodb.net/?retryWrites=true&w=majority".format(mongo_username, mongo_password, mongo_cluster))
 database = cluster["keyboard_input"]
 messages_collection = database["keyboard_collection"]
 
