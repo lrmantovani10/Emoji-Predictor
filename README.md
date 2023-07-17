@@ -3,3 +3,4 @@ Tool to automate keyboard text predictions by inserting emojis instead of text. 
 * keyboard.py - this file provides the front-end interface for the application itself. It works by toggling the predictor tool on / off when the user presses alt + w. Then, when the user presses a number from 1 to 10, the predictor generates a sentence in the tone mapped by that number as specified by the key_pairings dictionary. 
 * backend.py - this file takes the text written by the user and sends it to the OpenAI API for completion, according to the parameters specified in the file, such as model name, temperature, max token count, and diversity vs nucleus sampling. It then returns the input to the keyboard interface.
 
+![Illustration](Diagram.png)
